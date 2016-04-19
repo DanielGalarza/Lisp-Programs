@@ -1,7 +1,5 @@
 # Lisp-Programs
 
-# Lisp-Programs
-
 Program 1:
 
  N Factorial.  Takes a positive integer and returns its factorial.

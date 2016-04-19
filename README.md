@@ -3,11 +3,13 @@
 Program 1:
  N Factorial.  Takes a positive integer and returns its factorial.
 
+********************************************************************************************
 
 Program 2:
  Move to front. Takes a word and a list of words. If the word is not in the list, it is 
  added at the front. If the word is in the list, it is moved to the front.
 
+********************************************************************************************
 
 Program 3:
  Divide by 5 counter.  A function that receives a list of numbers, and returns a count 
@@ -16,22 +18,26 @@ Program 3:
  
  Sample:   (divide-by-5  ’(3 15 78 100 4))  ==>  2
 
+********************************************************************************************
 
 Program 4:
  Remove negatives. A function that receives a list of integers and returns a list with 
  all negative values removed.
 
+********************************************************************************************
 
 Program 5:
  Search.  A function that receives an integer and a list.  The list will have a mix of 
  integers, characters, and words, and may have nested lists.  The function returns a 
  count of how many times the integer value is found.
 
+********************************************************************************************
 
 Program 6:
  Is sorted. A function that receives a list of integers and returns true or nil for 
  whether the list is sorted ascending.
 
+********************************************************************************************
 
 Program 7:
 Temperature conversion.  Receives a list containing two pieces of data, a number and 
@@ -42,6 +48,7 @@ legitimate integer.
 
 Sample:   (convert  ’(100 C))  ==>  212
 
+********************************************************************************************
 
 Program 8:
  Twin.  Receives a list of anything, not nested, and doubles all elements.
@@ -53,6 +60,7 @@ Program 8:
  
  Sample:   (untwin ’(dog dog 2 cat 7 7 dog))  ==>  (dog 2 cat 7 dog)
 
+********************************************************************************************
 
 Program 9:
 Flatten.  Receives a list of arbitrary depth, and returns a list containing 
@@ -61,7 +69,8 @@ all the same elements, in the same order, but now at the top level.
 Sample:   (flatten  ’(a b (c d) ( ) (e (f (g) h))))  ==>  (a b c d e f g h)  
 	  (note that NIL was also flattened)
 	  
-	  
+********************************************************************************************
+
 Program 10:
  Sets.  Write functions that implement the regular set operations union, 
 intersection, and member for top-level lists. No restriction on output ordering. 
@@ -71,6 +80,7 @@ Examples:
  (myintersection  ’(a b d x c) ’(b y))  ==>  (b)
  (mymember  ’cat ’(b y))  ==>  nil
  
+********************************************************************************************
 
 Program 11:
  Expression syntax checker.  A function which checks the syntax of a nested 
@@ -89,7 +99,7 @@ Examples:
 (checker  '((7 + 3) minus 12))         ==>  nil	 (invalid operator “+”)
 (checker  '(-4 plus (cat minus dog)))  ==>  nil  (operands not numeric)
 
-
+********************************************************************************************
 
 NOTES:
 
@@ -124,11 +134,11 @@ NOTES:
             	;; LISP CODE HERE
             
                 ;;  test plan for adder:
-                ;;  category			             	      data		   expected result
+                ;;  category			             	    data               expected result
                 ;;  ----------------------------------------------------------------------------------------------------
-            		;;  empty list				                ( )	   	       0
-            		;;  list with 1 element		            (6)		         6
-            		;;  list sums to zero & duplicates	(-2 1 0 1)	     0
+            		;;  empty list				    ( )	   	       0
+            		;;  list with 1 element		            (6)		       6
+            		;;  list sums to zero & duplicates	    (-2 1 0 1)	       0
             				;etc.
             				
 7.  One way to develop these programs is to have a working file (blah.lsp) containing your 

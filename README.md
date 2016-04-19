@@ -149,9 +149,9 @@ NOTES:
                 ;;       1. no embedded lists
                 ;;       2. all list elements are integers
                 ;;       3. list sum will not exceed maxint
-            
-            	;; LISP CODE HERE
-            
+                ;;
+            	;;  LISP CODE HERE
+            	;;
                 ;;  test plan for adder:
                 ;;  category			             	data	 		expected result
                 ;;  ----------------------------------------------------------------------------------------------------

@@ -77,7 +77,9 @@ intersection, and member for top-level lists. No restriction on output ordering.
 
 Examples:
  a. (myunion  ’(a b d x c) ’(b y))  ==>  (a b d x c y)
+ 
  b. (myintersection  ’(a b d x c) ’(b y))  ==>  (b)
+ 
  c. (mymember  ’cat ’(b y))  ==>  nil
  
 ********************************************************************************************

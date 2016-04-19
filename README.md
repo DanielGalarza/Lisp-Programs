@@ -140,6 +140,7 @@ NOTES:
    your entire test plan  (remember, you are claiming that all test cases ran as specified).  
 
     Sample:
+    
                 ;;  Stu Student – CSI 3210 – Spring 2016
                 ;;  ============================
                 ;;  adder function: adds all elements of a given list
@@ -149,9 +150,9 @@ NOTES:
                 ;;       1. no embedded lists
                 ;;       2. all list elements are integers
                 ;;       3. list sum will not exceed maxint
-                ;;
+                
             	;;  LISP CODE HERE
-            	;;
+            	
                 ;;  test plan for adder:
                 ;;  category			             	data	 		expected result
                 ;;  ----------------------------------------------------------------------------------------------------

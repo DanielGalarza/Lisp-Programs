@@ -76,9 +76,9 @@ Program 10:
 intersection, and member for top-level lists. No restriction on output ordering. 
 
 Examples:
- (myunion  ’(a b d x c) ’(b y))  ==>  (a b d x c y)
- (myintersection  ’(a b d x c) ’(b y))  ==>  (b)
- (mymember  ’cat ’(b y))  ==>  nil
+ a. (myunion  ’(a b d x c) ’(b y))  ==>  (a b d x c y)
+ b. (myintersection  ’(a b d x c) ’(b y))  ==>  (b)
+ c. (mymember  ’cat ’(b y))  ==>  nil
  
 ********************************************************************************************
 
@@ -92,12 +92,17 @@ Your main function should call 3 helper functions which each check one condition
 
 Examples:
 
-(checker  '(7 plus 11))                ==>  true (valid)
-(checker  '(25 minus (17 times 12)))   ==>  true (valid)
-(checker  '(-4 plus))                  ==>  nil	 (wrong number of operands)
-(checker  '(-4 plus (cat minus dog)))  ==>  nil	 (operands not numeric)
-(checker  '((7 + 3) minus 12))         ==>  nil	 (invalid operator “+”)
-(checker  '(-4 plus (cat minus dog)))  ==>  nil  (operands not numeric)
+a. (checker  '(7 plus 11))                ==>  true (valid)
+
+b. (checker  '(25 minus (17 times 12)))   ==>  true (valid)
+
+c. (checker  '(-4 plus))                  ==>  nil  (wrong number of operands)
+
+d. (checker  '(-4 plus (cat minus dog)))  ==>  nil  (operands not numeric)
+
+e. (checker  '((7 + 3) minus 12))         ==>  nil  (invalid operator “+”)
+
+f. (checker  '(-4 plus (cat minus dog)))  ==>  nil  (operands not numeric)
 
 ********************************************************************************************
 
@@ -134,12 +139,12 @@ NOTES:
             	;; LISP CODE HERE
             
                 ;;  test plan for adder:
-                ;;  category			             	    data               expected result
+                ;;  category			             	data	 		expected result
                 ;;  ----------------------------------------------------------------------------------------------------
-            		;;  empty list				    ( )	   	       0
-            		;;  list with 1 element		            (6)		       6
-            		;;  list sums to zero & duplicates	    (-2 1 0 1)	       0
-            				;etc.
+    		;;  empty list					( )	   	       	0
+    		;;  list with 1 element				(6)		       	6
+    		;;  list sums to zero & duplicate		(-2 1 0 1)	       	0
+                 					;etc.
             				
 7.  One way to develop these programs is to have a working file (blah.lsp) containing your 
     code, plus setfs for the data test cases.  You can then just call the function several times 

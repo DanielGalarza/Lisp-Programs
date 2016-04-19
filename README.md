@@ -156,9 +156,9 @@ NOTES:
                 ;;  test plan for adder:
                 ;;  category			             	data	 		expected result
                 ;;  ----------------------------------------------------------------------------------------------------
-    		;;  empty list					( )	   	       	0
-    		;;  list with 1 element				(6)		       	6
-    		;;  list sums to zero & duplicate		(-2 1 0 1)	       	0
+                ;;  empty list					( )	   	       	0
+                ;;  list with 1 element				(6)		       	6
+                ;;  list sums to zero & duplicate		(-2 1 0 1)	       	0
                  					;etc.
             				
 7.  One way to develop these programs is to have a working file (blah.lsp) containing your 
